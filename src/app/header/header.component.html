@@ -1,0 +1,21 @@
+<header class="flex justify-between items-center bg-slate-200 p-4">
+  <div>
+    <img src="https://swigo.dexignzone.com/tailwind/xhtml/assets/images/logo.png">
+  </div>
+  <div class="flex">
+    <nav class="flex">
+      <a *ngFor="let subnav of nav" class="flex items-center text-gray-900 font-medium px-5 py-3" href="">
+        <span>{{subnav.name}}</span>
+        <i [class]="'pi ' + subnav.icon" class="ml-2 translate-y-0.5"></i>
+      </a>
+    </nav>
+    <div class="flex items-center gap-2">
+      <button class="flex bg-white rounded-lg shadow-lg p-3">
+        <img src="assets/icon/user.png">
+      </button>
+      <button class="flex bg-white rounded-lg shadow-lg p-3">
+        <img src="assets/icon/shopping-bag.png">
+      </button>
+    </div>
+  </div>
+</header>
