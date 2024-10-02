@@ -1,0 +1,53 @@
+@keyframes swigo-logo {
+  from,
+	45%,
+	55%,
+	65%,
+	75%,
+	80%,
+	85%,
+	to{
+    animation-timing-function: cubic-bezier(0.200, 0.600, 0.350, 1.000);
+  }
+
+  0%{
+    transform: rotate(0);
+  }
+
+  45%{
+    transform: translate3d(-4%, -13%, 0) rotate(-13deg);
+  }
+
+  55%{
+    transform: translate3d(1%, -2%, 0) rotate(6deg);
+  }
+
+  65%{
+    transform: translate3d(-2%, -4%, 0) rotate(-3deg);
+  }
+
+  75%{
+    transform: translate3d(2%, 3%, 0) rotate(3deg);
+  }
+
+  80%{
+    transform: translate3d(-2%, 1%, 0) rotate(-2deg);
+  }
+
+  to{
+    transform: none;
+  }
+}
+.pan {
+  animation-duration: 1.8s;
+  animation-fill-mode: both;
+  animation-iteration-count: infinite;
+  animation-name: swigo-logo;
+  height: 12px;
+  width: 38px;
+  position: absolute;
+  top: 10px;
+  left: 18px;
+  background-repeat: no-repeat;
+}
+
