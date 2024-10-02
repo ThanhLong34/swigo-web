@@ -5,9 +5,9 @@
   </div>
   <div class="flex">
     <nav class="flex">
-      <a *ngFor="let subnav of nav" class="flex items-center text-gray-900 font-medium px-5 py-3" href="">
-        <span>{{subnav.name}}</span>
-        <i [class]="'pi ' + subnav.icon" class="ml-2 translate-y-0.5"></i>
+      <a *ngFor="let nav of navItems" class="flex items-center text-gray-900 font-medium px-5 py-3" href="">
+        <span>{{nav.name}}</span>
+        <i [class]="'pi ' + nav.icon" class="ml-2 translate-y-0.5"></i>
       </a>
     </nav>
     <div class="flex items-center gap-2">
