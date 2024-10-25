@@ -1,22 +1,60 @@
-<header class="flex justify-between items-center bg-slate-200 p-4">
-  <div>
-    <img class="pan" src="https://swigo.dexignzone.com/tailwind/xhtml/assets/images/pan1.png">
-    <img src="https://swigo.dexignzone.com/tailwind/xhtml/assets/images/logo.png">
+<div>
+  <div class="bg-lime-50 absolute -z-10 left-0 w-full h-full"></div>
+  <div class="absolute -z-10 right-0 overflow-hidden h-full">
+    <img
+      class="bg-primary max-w-full h-[1100px]"
+      src="https://swigo.dexignzone.com/tailwind/xhtml/assets/images/main-slider/slider1/img3.png"
+    />
   </div>
-  <div class="flex">
-    <nav class="flex">
-      <a *ngFor="let nav of navItems" class="flex items-center text-gray-900 font-medium px-5 py-3" href="">
-        <span>{{nav.name}}</span>
-        <i [class]="'pi ' + nav.icon" class="ml-2 translate-y-0.5"></i>
-      </a>
-    </nav>
-    <div class="flex items-center gap-2">
-      <button class="flex bg-white rounded-lg shadow-lg p-3">
-        <img src="assets/icon/user.png">
-      </button>
-      <button class="flex bg-white rounded-lg shadow-lg p-3">
-        <img src="assets/icon/shopping-bag.png">
-      </button>
+</div>
+<div>
+  <header class="flex justify-between items-center px-3 py-5">
+    <div class="relative">
+      <img
+        class="pan"
+        src="https://swigo.dexignzone.com/tailwind/xhtml/assets/images/pan1.png"
+      />
+      <img
+        src="https://swigo.dexignzone.com/tailwind/xhtml/assets/images/logo.png"
+      />
+    </div>
+    <div class="flex">
+      <nav class="flex mr-10 font-poppins">
+        <a
+          *ngFor="let nav of navItems"
+          class="flex items-center text-gray-900 text-xl pl-10 py-3"
+          href=""
+        >
+          <span>{{ nav.name }}</span>
+          <i [class]="'pi ' + nav.icon" class="ml-2 translate-y-0.5"></i>
+        </a>
+      </nav>
+      <div class="flex items-center gap-2">
+        <button class="flex bg-white rounded-lg shadow-lg p-3">
+          <img src="assets/icon/user.png" />
+        </button>
+        <button class="flex bg-white rounded-lg shadow-lg p-3">
+          <img src="assets/icon/shopping-bag.png" />
+        </button>
+      </div>
+    </div>
+  </header>
+  <div class="flex flex-col gap-8 my-14 w-1/2 font-poppins">
+    <p class="text-amber-500 text-xl font-medium uppercase">High Quality Test Station</p>
+    <h1 class="text-[80px] text-gray-900 leading-tight font-lobster ">
+      Choosing The 
+      <br />
+      Best 
+      <span class="text-primary">
+        Quality Food
+      </span>
+    </h1>
+    <p class="text-xl text-gray-500 leading-8 max-w-96">
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+    </p>
+    <div class="flex gap-8">
+      <button class="btn-primary">Book a Table</button>
+      <button class="btn-secondary">View More</button>
     </div>
   </div>
-</header>
+</div>
