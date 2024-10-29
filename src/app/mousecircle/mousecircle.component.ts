@@ -1,13 +1,13 @@
 import { Component, HostListener } from '@angular/core';
 
 @Component({
-  selector: 'app-mousecircle',
+  selector: 'app-mouse-circle',
   standalone: true,
   imports: [],
   templateUrl: './mousecircle.component.html',
   styleUrl: './mousecircle.component.scss'
 })
-export class MousecircleComponent {
+export class MouseCircleComponent {
 
   mouseX: number = 0;
   mouseY: number = 0;
