@@ -3,3 +3,40 @@
 @tailwind utilities;
 
 @import "primeicons/primeicons.css";
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+
+.btn-primary {
+    padding: 15px 30px;
+    background: #7da640;
+    border-radius: 8px;
+    border: 1px solid transparent;
+    color: white;
+    font-size: large;
+    font-weight: 550;
+    font-family: Poppins, sans-serif;
+    cursor: pointer;
+}
+
+.btn-primary:hover {
+    background: white;
+    border: 1px solid #7da640;
+    color: #7da640;
+}
+
+.btn-secondary {
+    padding: 15px 30px;
+    background: white;
+    border-radius: 8px;
+    border: 1px solid #7da640;
+    color: #7da640;
+    font-size: large;
+    font-weight: 550;
+    font-family: Poppins, sans-serif;
+    cursor: pointer;
+}
+
+.btn-secondary:hover {
+    background: #7da640;
+    border: 1px solid white;
+    color: white;
+}
